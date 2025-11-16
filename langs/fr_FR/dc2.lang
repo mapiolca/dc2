@@ -6,6 +6,8 @@ Module450006Name = Formulaire DC2
 Delegation=Délégation
 
 SetupG=Général 
+ReadDc2Tab= Lire l'onglet DC2 et son contenu
+EditDc2Tab= Editer le contenu de l'onglet DC2
 
 dc2 = Formulaire DC2
 
@@ -152,6 +154,7 @@ DC2_I2 = <b>I2 - Documents, renseignements ou justificatifs permettant d’éval
 DC2_I2_Tooltip = Uniquement lorsque l’acheteur a ouvert la procédure de passation aux opérateurs économiques des pays tiers à l’Union européenne ou à l’Espace économique européen
 
 Details = Détails 
+
 
 # Entrées génériques pour le module
 ModuleMyModuleName=MonModule
