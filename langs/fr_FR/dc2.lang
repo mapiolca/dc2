@@ -1,0 +1,154 @@
+# Dolibarr language file - fr_FR - tos
+# Admin form
+CHARSET=iso-8859-1
+Module450006Desc = Module permettant remplir le formulaire DC2 depuis la proposition commerciale
+Module450006Name = Formulaire DC2
+Delegation=Délégation
+
+SetupG=Général 
+
+dc2 = Formulaire DC2
+
+DC2_generate = Pour Générer le formulaire DC2, retournez dans l'onglet "Proposition commerciale", puis selectionnez le modèle de document "DC2" et cliquez sur "Générer".
+
+DC1_F3 = <b>F3 - Capacités.</b>
+dc21 = DC2
+dc22 = Documents demandés
+dc23 = Tout
+dc24 = Aucun
+
+PDFDC2LMDBDescription2016 = Modèle de Formulaire DC2 version 2016 (dépréciée)
+PDFDC2LMDBDescription2023 = Modèle de Formulaire DC2 version 2023
+
+DC2LineUpdated = Champs mis à jour avec succès
+
+DC2_Consigne_entete = Le formulaire DC2 est un modèle de déclaration qui peut être utilisé par les candidats aux marchés publics (marchés ou accords-cadres) à l'appui de leur candidature (formulaire DC1).<br>En cas d’allotissement, ce document doit être fourni pour chacun des lots de la consultation.<br><br>En cas de candidature groupée, il est rempli par chaque membre du groupement.<br><br>En complément de sa lettre de candidature (formulaire DC1), le candidat individuel ou chacun des membres du groupement peut produire, en annexe du DC2, les éléments demandés par l’acheteur dans l'avis d'appel à la concurrence ou dans l’invitation à confirmer l’intérêt, ou en l’absence d’un tel avis ou d’une telle invitation, dans les documents de la consultation.<br><br>Il est rappelé qu’en application de l’article 4 de l’ordonnance n° 2015-899 du 23 juillet 2015 relative aux marchés publics, le vocable de « marché public » recouvre également les accords-cadres s’exécutant par la conclusion de marchés subséquents ou par l’émission de bons de commande, les marchés subséquents, les marchés spécifiques conclus dans le cadre d’un système d’acquisition dynamique et les marchés de partenariat.
+DC2_Consigne_notice = Consulter la notice officielle
+
+DC2_A = <b><u>A - Identification de l’acheteur</u></b>
+DC2_A_Tooltype = Reprendre le contenu de la mention figurant dans l’avis d’appel à la concurrence ou l’invitation à confirmer l’intérêt ; en cas de publication d’une annonce au Journal officiel de l’Union européenne ou au Bulletin officiel des annonces de marchés publics, la simple indication de la référence à cet avis est suffisante ; dans tous les cas, l’indication du numéro de référence attribué au dossier par l’acheteur est également une information suffisante.
+DC2_B = <b><u>B - Objet de la consultation</u></b>
+DC2_B_Tooltype = Reprendre le contenu de la mention figurant dans l’avis d’appel à la concurrence ou l’invitation à confirmer l’intérêt ; en cas de publication d’une annonce au Journal officiel de l’Union européenne ou au Bulletin officiel des annonces de marchés publics, la simple indication de la référence à cet avis est suffisante ; dans tous les cas, l’indication du numéro de référence attribué au dossier par l’acheteur est également une information suffisante.
+DC2_C = <b><u>C - Identification du candidat individuel ou du membre du groupement</u></b>
+DC2_C1 = <b>C1 - Cas général</b>
+DC2_C1a = Designation du Candidat
+DC2_C1a_Tooltype = Nom commercial et dénomination sociale de l’unité ou de l’établissement qui exécutera la prestation, adresses postale et du siège social (si elle est différente de l’adresse postale), adresse électronique, numéros de téléphone et de télécopie, numéro SIRET, à défaut, un numéro d’identification européen ou international ou propre au pays d’origine du candidat issu d’un répertoire figurant dans la liste des ICD :
+DC2_C1b = Forme juridique du candidat individuel ou du membre du groupement
+DC2_C1b_Tooltype = Entreprise individuelle, SA, SARL, EURL, association, établissement public, etc.
+DC2_C1c = Le candidat est-il une micro, une petite ou une moyenne entreprise ou un artisan ?
+DC2_C1c_Tooltype = Au sens du II de l’article 57 du décret n° 2016-360 du 25 mars 2016 relatif aux marchés publics ou de l’article 51 du décret n° 2016-361 du 25 mars 2016 relatif aux marchés publics de défense ou de sécurité (MDS)
+DC2_C2 = <b>C2 - Cas particuliers en cas de marché public réservé</b>
+DC2_C2_Tooltype = Le candidat individuel ou le membre du groupement répondant à l’une des conditions qui suivent et postulant à un marché public réservé en application des articles 36 ou 37 de l’ordonnance n° 2015-899 du 23 juillet 2015 coche la case correspondant à sa situation. Le candidat européen à statut équivalent, lorsqu’il n’est pas établi en France, précise son statut juridique et, pour les marchés publics de défense ou de sécurité, fournit les textes relatifs à ce statut. Pour les autres marchés publics, il sera tenu de les fournir au stade de la vérification des candidatures, sauf dans les conditions de l’article 53 du décret n° 2016-360.
+DC2_C2_statut = Statut du candidat individuel <i>ou du membre du groupement</i>
+
+DC2_C2_1 = Structure d’insertion par l’activité économique ou structure équivalente
+DC2_C2_1_Tooltype = (Article L.5132-4 du code du travail)
+DC2_C2_1_Consigne = <b>Le contrat d’objectif valant agrément ou un certificat administratif portant reconnaissance du statut d’entreprise adaptée délivré par la direction régionale chargée de l’emploi et de la formation professionnelle ou de structure équivalente sera à produire.</b>
+
+DC2_C2_2 = Entreprise adaptée ou structures équivalentes
+DC2_C2_2_Tooltype = Article L. 5213-13 du code du travail.
+DC2_C2_2_Consigne = <b>Le contrat d’objectif valant agrément ou un certificat administratif portant reconnaissance du statut d’entreprise adaptée délivré par la direction régionale chargée de l’emploi et de la formation professionnelle ou de structure équivalente sera à produire.</b>
+
+DC2_C2_3 = Etablissement et service d’aide par le travail ou structures équivalentes
+DC2_C2_3_Tooltype = Article L. 344-2 et s. du code de l’action sociale et des familles.
+DC2_C2_3_Consigne = Publication au recueil des actes administratifs de l’arrêté préfectoral portant autorisation de création
+DC2_C2_3_Consigne_Tooltype = Lorsqu’il n’y a pas eu de publication de l’arrêté au recueil des actes administratifs, la preuve de la reconnaissance du statut d’établissement ou de service d’aide par le travail ou de structure équivalente sera à produire.
+
+DC2_C2_4 = Entreprise de l’économie sociale et solidaire ou structures équivalentes
+DC2_C2_4_Tooltype = (Article 1er de la loi 2014-856 du 31 juillet 2014) 
+
+DC2_C2_5 = Opérateur économique prévoyant d’exécuter le marché dans le cadre d’activités de production de biens et de services réalisés en établissement pénitentiaire
+
+DC2_C2_Consigne = <b>La preuve de la qualification d’entreprise de l’économie sociale et solidaire ou de structure équivalente sera à produire.</b>
+DC2_C2_adresse = Adresse internet à laquelle cette preuve est accessible directement et gratuitement
+DC2_C2_renseignements = Ensemble des renseignements nécessaires pour y accéder
+
+DC2_C2_idem = L’adresse internet à laquelle cette preuve est accessible directement et gratuitement, ainsi que l’ensemble des renseignements nécessaires pour y accéder est la même que dans le formulaire DC1 ?
+
+DC2_C3 = <b><u>C3 - Cas spécifiques relatifs aux conditions de participation</u></b>
+DC2_D1 = <b><u>D - Cas spécifiques relatifs aux conditions de participation</u></b>
+DC2_D1_1 = 1. Lorsque le candidat est inscrit sur une liste officielle d’opérateurs économiques agréés au sens de l’article 54 du décret n° 2016-360 du 25 mars 2016 relatif aux marchés publics <b>et</b> que l’acheteur est un pouvoir adjudicateur ou au sens de l’article 46 du décret n° 2016-361 du 25 mars 2016 relatif aux marchés publics de défense ou de sécurité dans toutes les hypothèses
+
+DC2_D1_Indication = Indication du nom de la liste officielle
+DC2_D1_Reference = Références sur lesquelles l’inscription ou la certification est basée et, le cas échéant, la classification sur la liste
+DC2_D1_Reference_Tooltip = L’attention du candidat est attirée sur le fait qu’il convient de remplir les rubriques suivantes du présent formulaire pour l’ensemble des conditions de participation fixées par l’acheteur et qui ne seraient pas couvertes par les conditions d’inscription sur la liste officielle ou le certificat d’inscription sur cette liste.
+
+DC2_D1_idem = Peut-on acceder au certificat d’inscription sur cette liste officielle est accessible directement et gratuitement, à la même adresse que la pour le formulaire DC1 ?
+
+DC2_D1_adresse = Adresse internet à laquelle cette preuve est accessible directement et gratuitement
+DC2_D1_renseignements = Ensemble des renseignements nécessaires pour y accéder
+
+DC2_D2 = 2. Lorsque le marché public est soumis au décret n° 2016-360 du 25 mars 2016 relatif aux marchés publics et que l’acheteur a autorisé les candidats à se limiter à indiquer qu’ils disposent de l’aptitude et des capacités requises en application du second alinéa de l’article 49 de ce décret
+
+DC2_D2_attestation = Le candidat déclare sur l’honneur satisfaire à l’ensemble des conditions de participation requises par l’acheteur.
+DC2_D2_attestation_Tooltip = Dans ce cas, il est inutile de remplir les rubriques suivantes du présent formulaire ; le remplissage du formulaire est terminé.
+
+DC2_E = <b><u>E - Renseignements relatifs à l’aptitude à exercer l’activité professionnelle concernée par le contrat.</u></b>
+DC2_E_1 = <i>Le candidat ne fournit que les renseignements demandés par l’acheteur au titre de l’aptitude à exercer l’activité professionnelle.</i>
+DC2_E_1_Tooltip = En cas de MDS, les documents de preuve sont à fournir avec la candidature sauf cas particulier de la rubrique E3.
+
+DC2_E1 = <b>E1 - Enseignements sur l’inscription sur un registre professionnel.</b>
+DC2_E2 = <b>E2 - Le cas échéant, pour les marchés publics de services, indication de l’autorisation spécifique dont le candidat doit être doté ou de l’organisation spécifique dont il doit être membre pour pouvoir fournir, dans son pays d’origine, le service concerné</b>
+
+DC2_E3 = <b>E3 - Le cas échéant, adresse internet à laquelle les documents justificatifs et moyens de preuve sont accessibles directement et gratuitement, ainsi que l’ensemble des renseignements nécessaires pour y accéder</b>
+DC2_E3_Tooltip = Applicable aux MDS, lorsque l’acheteur a autorisé les candidats à ne pas fournir ces documents de preuve en application du premier alinéa de l’article 45 du décret n° 2016-361 du 25 mars 2016 relatif aux marchés publics de défense ou de sécurité
+
+DC2_E3_idem = Les adresses et les renseignements sont identiques à ceux fournis plus haut se contenter de renvoyer à la rubrique concernée?
+
+DC2_E3_adresse = Adresse internet à laquelle cette preuve est accessible directement et gratuitement
+DC2_E3_renseignements = Ensemble des renseignements nécessaires pour y accéder
+
+DC2_F = <b><u>F - Renseignements relatifs à la capacité économique et financière du candidat individuel ou du membre du groupement</u></b>
+
+DC2_F_Designation = <i>Le candidat ne fournit que les renseignements demandés par l’acheteur au titre de la capacité économique et financière.</i>
+
+DC2_F_Designation_Tooltip = En cas de MDS, les documents de preuve sont à fournir avec la candidature sauf cas particulier de la rubrique F4.
+
+DC2_F1 = <b>F1 - Chiffres d’affaires hors taxes des trois derniers exercices disponibles</b>
+
+
+DC2_Exercice_du = Exercice du 
+DC2_Exercice_au = au
+DC2_Chiffre = Chiffre d’affaires global
+DC2_Chiffre_Tooltip = Ne remplir que pour les exercices pour lesquels ce renseignement est demandé par l’acheteur.
+DC2_F_Date_Creation = Lorsque les informations sur le chiffre d’affaires ne sont pas disponibles pour la totalité de la période demandée, indication de la date à laquelle l’opérateur économique a été créé ou a commencé son activité.
+
+DC2_F2 = <b>F2 - Autres informations requises par l’acheteur au titre de la capacité économique et financière</b>
+DC2_F2_Tooltip = Chiffres d’affaires moyens sur la période demandée par l’acheteur, informations sur les comptes annuels, rapport entre les éléments d’actif et de passif, informations sur le niveau approprié d’assurance des risques professionnels, etc., tels que demandés par l’acheteur ; le cas échéant, renvoyer à la rubrique H du présent formulaire.
+
+DC2_F3 = <b>F3 - Pour les marchés publics de travaux</b>
+DC2_F3_Texte = Le candidat déclare qu’il aura souscrit un contrat d’assurance le couvrant au regard de la responsabilité décennale.
+DC2_F3_Texte_Tooltip = Article L. 241-1 du code des assurances.
+
+DC2_F4 = <b>F4 - Documents de preuve disponibles en ligne</b>
+DC2_F4_Tooltip = Applicable aux MDS, sauf si l’acheteur a autorisé les candidats à ne pas fournir ces documents de preuve en application du premier alinéa de l’article 45 du décret n° 2106-361 du 25 mars 2016 relatif aux marchés publics de défense ou de sécurité
+DC2_F4_idem = Les adresses et les renseignements sont identiques à ceux fournis plus haut se contenter de renvoyer à la rubrique concernée?
+DC2_F4_adresse = Adresse internet à laquelle cette preuve est accessible directement et gratuitement
+DC2_F4_renseignements = Ensemble des renseignements nécessaires pour y accéder
+
+DC2_G = <b><u>G - Renseignements relatifs à la capacité technique et professionnelle du candidat individuel ou du membre du groupement</u></b>
+DC2_G_Consigne = <i>Le candidat ne fournit que les renseignements demandés par l’acheteur au titre de la capacité technique et professionnelle.</i>
+DC2_G_Tooltip = En cas de MDS, les documents de preuve sont à fournir avec la candidature sauf cas particulier de la rubrique G2.
+
+DC2_G1 = <b>G1 - Le candidat ne fournit que les renseignements demandés par l’acheteur au titre de la capacité technique et professionnelle, qu’il peut récapituler ici.</b>
+
+DC2_G2 = <b>G2 - Documents de preuve disponibles en ligne</b>
+DC2_G2_Tooltip = Hors hypothèse des MDS, sauf si l’acheteur a autorisé les candidats à ne pas fournir ces documents de preuve en application du premier alinéa de l’article 45 du décret n° 2016-361 du 25 mars 2016 relatif aux marchés publics de défense ou de sécurité.
+DC2_G2_idem = Les adresses et les renseignements sont identiques à ceux fournis plus haut se contenter de renvoyer à la rubrique concernée?
+DC2_G2_adresse = Adresse internet à laquelle cette preuve est accessible directement et gratuitement
+DC2_G2_renseignements = Ensemble des renseignements nécessaires pour y accéder
+
+DC2_H = <b><u>H - Capacités des opérateurs économiques sur lesquels le candidat individuel ou le membre du groupement s’appuie pour présenter sa candidature</u></b>
+DC2_H1 = <b>     Désignation du (des) Opérateur(s)</b>
+DC2_H_Tooltip = Rubrique à renseigner dans l’hypothèse où le candidat ou l’un des membres du groupement s’appuie sur la ou les capacités d’un autre opérateur économique, quelle que soit la nature juridique des liens qui l’unissent à cet opérateur, en application du II de l’article 48 du décret n° 2016-360 du 25 mars 2016 relatif aux marchés publics ou du II de l’article 40 du décret n° 2016-361 relatif aux marchés publics de défense ou de sécurité.
+(Joindre, pour chaque opérateur économique, en annexe du DC2, tous les renseignements demandés par l’acheteur dans l'avis d'appel à la concurrence ou l’invitation à confirmer l’intérêt ou en l’absence d’un tel avis ou d’une telle invitation, dans les documents de la consultation. Le candidat sera tenu d’apporter la preuve que chacun des opérateurs économiques mettra à la disposition du candidat individuel ou du membre du groupement les moyens nécessaires pendant toute la durée d’exécution du marché public ; en cas de MDS, cette preuve est à fournir au stade de la candidature.)
+
+DC2_H_designation = <b>Désignation du (des) opérateur(s)</b>
+DC2_H_designation_Tooltip = Adapter le tableau autant que nécessaire.
+
+DC2_I = <b><u>I - Renseignements spécifiques aux marchés publics de défense ou de sécurité</u></b>
+DC2_I1 = <b>I1 - Renseignements relatifs à la nationalité du candidat individuel ou du membre du groupement</b>
+DC2_I2 = <b>I2 - Documents, renseignements ou justificatifs permettant d’évaluer si le candidat individuel ou le membre du groupement répond aux critères d’accessibilité à la procédure indiquée dans l’avis d’appel à la concurrence</b>
+DC2_I2_Tooltip = Uniquement lorsque l’acheteur a ouvert la procédure de passation aux opérateurs économiques des pays tiers à l’Union européenne ou à l’Espace économique européen
+
+Details = Détails 
