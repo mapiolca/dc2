@@ -67,9 +67,9 @@ $object = new Propal($db);
 $dc1 = new DC1($db);
 $dc2 = new DC2($db);
 
-$canAddLines = $user->admin || $user->rights->dc2->DC2->create;
-$canReadLines = $user->admin || $user->rights->dc2->DC2->read;
-$canDeleteLines = $user->admin || $user->rights->dc2->DC2->delete;
+$canAddLines = $user->admin || $user->hasRight('dc2','write');
+$canReadLines = $user->admin || $user->hasRight('dc2','read');
+$canDeleteLines = $user->admin || $user->hasRight('dc2','delete');
 
 if (!$canReadLines)
 {
