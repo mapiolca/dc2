@@ -79,7 +79,7 @@ class pdf_DC22016 extends ModelePDFPropales
 
 		$this->db = $db;
 		$this->name = "DC2 2016";
-		$this->description = $langs->trans('PDFDC2LMDBDescription');
+		$this->description = $langs->trans('PDFDC2LMDBDescription2016');
 
 		// Dimension page pour format A4
 		$this->type = 'pdf';

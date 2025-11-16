@@ -79,7 +79,7 @@ class pdf_DC22023 extends ModelePDFPropales
 
 		$this->db = $db;
 		$this->name = "DC2 2023";
-		$this->description = $langs->trans('PDFDC2LMDBDescription');
+		$this->description = $langs->trans('PDFDC2LMDBDescription2023');
 
 		// Dimension page pour format A4
 		$this->type = 'pdf';

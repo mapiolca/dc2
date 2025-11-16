@@ -1,42 +1,177 @@
-# Translation file
-
+# Dolibarr language file - en_US - dc2
 #
 # Generic
-#
+CHARSET=UTF-8
+Module450006Desc=Module to fill the DC2 form from the commercial proposal
+Module450006Name=DC2 form
+Delegation=Delegation
+SetupG=General
+ReadDc2Tab= Read the DC2 tab
+EditDc2Tab= Edit the contents of the DC2 tab
+dc2=DC2 form
+DC2_generate=To generate the DC2 form, go back to the "Commercial proposal" tab, then select the "DC2" document template and click "Generate".
 
-# Module label 'ModuleMyModuleName'
-ModuleMyModuleName = MyModule
-# Module description 'ModuleMyModuleDesc'
-ModuleMyModuleDesc = MyModule description
+DC1_F3=<b>F3 - Capacities.</b>
+dc21=DC2
+dc22=Requested documents
+dc23=All
+dc24=None
+
+PDFDC2LMDBDescription2016=DC2 form template version 2016 (deprecated)
+PDFDC2LMDBDescription2023=DC2 form template version 2023
+
+DC2LineUpdated=Fields successfully updated
+
+DC2_Consigne_entete=The DC2 form is a declaration template that candidates for public contracts (contracts or framework agreements) can use to support their application (DC1 form).<br>In the event of allotment, this document must be provided for each lot of the consultation.<br><br>In the case of a grouped application, it is completed by each member of the grouping.<br><br>In addition to the letter of application (DC1 form), the individual candidate or each member of the grouping may provide, as an annex to DC2, the elements requested by the buyer in the contract notice or in the invitation to confirm interest, or, if there is no such notice or invitation, in the consultation documents.<br><br>It should be noted that, pursuant to article 4 of ordinance no. 2015-899 of 23 July 2015 on public contracts, the term "public contract" also covers framework agreements implemented by awarding subsequent contracts or by issuing purchase orders, subsequent contracts, specific contracts concluded under a dynamic purchasing system and partnership contracts.
+DC2_Consigne_notice=Consult the official notice
+
+DC2_A=<b><u>A - Identification of the buyer</u></b>
+DC2_A_Tooltype=Use the wording appearing in the contract notice or the invitation to confirm interest; in the event of publication in the Official Journal of the European Union or in the Official Bulletin of Public Procurement Announcements, simply indicating the reference to this notice is sufficient; in all cases, the indication of the reference number assigned to the file by the buyer is also sufficient information.
+DC2_B=<b><u>B - Subject of the consultation</u></b>
+DC2_B_Tooltype=Use the wording appearing in the contract notice or the invitation to confirm interest; in the event of publication in the Official Journal of the European Union or in the Official Bulletin of Public Procurement Announcements, simply indicating the reference to this notice is sufficient; in all cases, the indication of the reference number assigned to the file by the buyer is also sufficient information.
+DC2_C=<b><u>C - Identification of the individual candidate or member of the grouping</u></b>
+DC2_C1=<b>C1 - General case</b>
+DC2_C1a=Candidate designation
+DC2_C1a_Tooltype=Trade name and corporate name of the unit or establishment that will perform the service, mailing address and registered office (if different from the mailing address), email address, telephone and fax numbers, SIRET number, failing that, a European or international identification number or one from the candidate's country of origin taken from a directory listed in the ICD list:
+DC2_C1b=Legal form of the individual candidate or member of the grouping
+DC2_C1b_Tooltype=Sole proprietorship, public limited company, limited liability company, single-member limited liability company, association, public institution, etc.
+DC2_C1c=Is the candidate a micro, small or medium-sized enterprise or a craftsman?
+DC2_C1c_Tooltype=Within the meaning of II of article 57 of decree no. 2016-360 of 25 March 2016 on public contracts or of article 51 of decree no. 2016-361 of 25 March 2016 on public contracts for defence or security (MDS)
+DC2_C2=<b>C2 - Special cases for reserved public contracts</b>
+DC2_C2_Tooltype=The individual candidate or member of the grouping who meets one of the following conditions and is applying for a reserved public contract pursuant to articles 36 or 37 of ordinance no. 2015-899 of 23 July 2015 ticks the box corresponding to their situation. The European candidate with equivalent status, when not established in France, specifies their legal status and, for public defence or security contracts, provides the texts relating to this status. For other public contracts, they will be required to provide them at the stage of verifying applications, except under the conditions of article 53 of decree no. 2016-360.
+DC2_C2_statut=Status of the individual candidate <i>or member of the grouping</i>
+
+DC2_C2_1=Work integration structure or equivalent structure
+DC2_C2_1_Tooltype=(Article L.5132-4 of the French labour code)
+DC2_C2_1_Consigne=<b>The objective contract acting as approval or an administrative certificate recognizing the status of adapted company issued by the regional directorate in charge of employment and vocational training or an equivalent structure must be provided.</b>
+
+DC2_C2_2=Adapted company or equivalent structures
+DC2_C2_2_Tooltype=Article L. 5213-13 of the French labour code.
+DC2_C2_2_Consigne=<b>The objective contract acting as approval or an administrative certificate recognizing the status of adapted company issued by the regional directorate in charge of employment and vocational training or an equivalent structure must be provided.</b>
+
+DC2_C2_3=Sheltered workshop and service or equivalent structures
+DC2_C2_3_Tooltype=Article L. 344-2 et seq. of the social action and family code.
+DC2_C2_3_Consigne=Publication in the administrative acts compendium of the prefectoral decree authorising the creation
+DC2_C2_3_Consigne_Tooltype=When there has been no publication of the decree in the administrative acts compendium, proof of recognition of the status of sheltered workshop or equivalent structure must be provided.
+
+DC2_C2_4=Social and solidarity economy company or equivalent structures
+DC2_C2_4_Tooltype=(Article 1 of law 2014-856 of 31 July 2014)
+
+DC2_C2_5=Economic operator planning to perform the contract as part of production activities carried out in a penitentiary establishment
+
+DC2_C2_Consigne=<b>Proof of the qualification as a social and solidarity economy company or equivalent structure must be provided.</b>
+DC2_C2_adresse=Internet address where this proof is directly and freely accessible
+DC2_C2_renseignements=All information required to access it
+
+DC2_C2_idem=Is the internet address where this proof is directly and freely accessible, as well as all the information required to access it, the same as in the DC1 form?
+
+DC2_C3=<b><u>C3 - Specific cases relating to the conditions of participation</u></b>
+DC2_D1=<b><u>D - Specific cases relating to the conditions of participation</u></b>
+DC2_D1_1=1. When the candidate is listed on an official list of approved economic operators within the meaning of article 54 of decree no. 2016-360 of 25 March 2016 on public contracts <b>and</b> the buyer is a contracting authority or within the meaning of article 46 of decree no. 2016-361 of 25 March 2016 on public contracts for defence or security in all cases
+
+DC2_D1_Indication=Name of the official list
+DC2_D1_Reference=References on which the registration or certification is based and, where applicable, the classification on the list
+DC2_D1_Reference_Tooltip=Candidates are reminded that they must complete the following sections of this form for all participation requirements set by the buyer that are not covered by the conditions for entry on the official list or the certificate of entry on this list.
+
+DC2_D1_idem=Can the certificate of registration on this official list be accessed directly and free of charge at the same address as for the DC1 form?
+
+DC2_D1_adresse=Internet address where this proof is directly and freely accessible
+DC2_D1_renseignements=All information required to access it
+
+DC2_D2=2. When the public contract is subject to decree no. 2016-360 of 25 March 2016 on public contracts and the buyer has authorised candidates to limit themselves to indicating that they have the required aptitude and capacities pursuant to the second paragraph of article 49 of this decree
+
+DC2_D2_attestation=The candidate declares on honour that they satisfy all the participation requirements set by the buyer.
+DC2_D2_attestation_Tooltip=In this case, it is unnecessary to complete the following sections of this form; the form is complete.
+
+DC2_E=<b><u>E - Information relating to the ability to exercise the professional activity concerned by the contract.</u></b>
+DC2_E_1=<i>The candidate provides only the information requested by the buyer concerning the ability to exercise the professional activity.</i>
+DC2_E_1_Tooltip=In the case of MDS, proof documents must be provided with the application except for the specific case in section E3.
+
+DC2_E1=<b>E1 - Information on registration in a professional register.</b>
+DC2_E2=<b>E2 - Where applicable, for public service contracts, indication of the specific authorisation that the candidate must hold or of the specific organisation that they must belong to in order to provide the service concerned in their country of origin</b>
+
+DC2_E3=<b>E3 - Where applicable, internet address where supporting documents and evidence are directly and freely accessible, as well as all the information required to access them</b>
+DC2_E3_Tooltip=Applicable to MDS, when the buyer has authorised candidates not to provide these proof documents pursuant to the first paragraph of article 45 of decree no. 2016-361 of 25 March 2016 on public contracts for defence or security
+
+DC2_E3_idem=Are the addresses and information identical to those provided above, simply refer to the relevant section?
+
+DC2_E3_adresse=Internet address where this proof is directly and freely accessible
+DC2_E3_renseignements=All information required to access it
+
+DC2_Exercice_du=Financial year from
+DC2_Exercice_au=to
+
+DC2_F=<b><u>F - Information on the economic and financial capacity of the individual candidate or member of the grouping</u></b>
+
+DC2_F_Designation=<i>The candidate provides only the information requested by the buyer regarding economic and financial capacity.</i>
+
+DC2_F_Designation_Tooltip=In the case of MDS, proof documents must be provided with the application except for the specific case in section F4.
+
+DC2_F1=<b>F1 - Turnover excluding tax for the last three available financial years</b>
+
+DC2_Chiffre=Total turnover
+DC2_Chiffre_Tooltip=Only complete for the financial years for which this information is requested by the buyer.
+DC2_F_Date_Creation=When turnover information is not available for the entire period requested, indicate the date on which the economic operator was created or began its activity.
+
+DC2_F2=<b>F2 - Other information required by the buyer regarding economic and financial capacity</b>
+DC2_F2_Tooltip=Average turnover over the period requested by the buyer, information on annual accounts, relationship between assets and liabilities, information on the appropriate level of insurance for professional risks, etc., as requested by the buyer; where applicable, refer to section H of this form.
+
+DC2_F3=<b>F3 - For public works contracts</b>
+DC2_F3_Texte=The candidate declares that they will have taken out insurance covering them for ten-year liability.
+DC2_F3_Texte_Tooltip=Article L. 241-1 of the insurance code.
+
+DC2_F4=<b>F4 - Proof documents available online</b>
+DC2_F4_Tooltip=Applicable to MDS, unless the buyer has authorised candidates not to provide these proof documents pursuant to the first paragraph of article 45 of decree no. 2106-361 of 25 March 2016 on public contracts for defence or security
+DC2_F4_idem=Are the addresses and information identical to those provided above, simply refer to the relevant section?
+DC2_F4_adresse=Internet address where this proof is directly and freely accessible
+DC2_F4_renseignements=All information required to access it
+
+DC2_G=<b><u>G - Information on the technical and professional capacity of the individual candidate or member of the grouping</u></b>
+DC2_G_Consigne=<i>The candidate provides only the information requested by the buyer regarding technical and professional capacity.</i>
+DC2_G_Tooltip=In the case of MDS, proof documents must be provided with the application except for the specific case in section G2.
+
+DC2_G1=<b>G1 - The candidate provides only the information requested by the buyer regarding technical and professional capacity, which can be summarised here.</b>
+
+DC2_G2=<b>G2 - Proof documents available online</b>
+DC2_G2_Tooltip=Outside the MDS hypothesis, unless the buyer has authorised candidates not to provide these proof documents pursuant to the first paragraph of article 45 of decree no. 2016-361 of 25 March 2016 on public contracts for defence or security.
+DC2_G2_idem=Are the addresses and information identical to those provided above, simply refer to the relevant section?
+DC2_G2_adresse=Internet address where this proof is directly and freely accessible
+DC2_G2_renseignements=All information required to access it
+
+DC2_H=<b><u>H - Capacities of the economic operators on which the individual candidate or member of the grouping relies to submit its application</u></b>
+DC2_H1=<b>     Designation of the operator(s)</b>
+DC2_H_Tooltip=Section to be completed where the candidate or one of the members of the grouping relies on the capacity of another economic operator, whatever the legal nature of the links between them, pursuant to II of article 48 of decree no. 2016-360 of 25 March 2016 on public contracts or II of article 40 of decree no. 2016-361 on public contracts for defence or security.
+(Joint, for each economic operator, as an appendix to DC2, all the information requested by the buyer in the contract notice or the invitation to confirm interest or, in the absence of such a notice or invitation, in the consultation documents. The candidate will be required to provide proof that each economic operator will make the necessary resources available to the individual candidate or member of the grouping throughout the duration of the public contract; in the case of MDS, this proof must be provided at the application stage.)
+
+DC2_H_designation=<b>Designation of the operator(s)</b>
+DC2_H_designation_Tooltip=Adapt the table as necessary.
+
+DC2_I=<b><u>I - Information specific to public contracts for defence or security</u></b>
+DC2_I1=<b>I1 - Information relating to the nationality of the individual candidate or member of the grouping</b>
+DC2_I2=<b>I2 - Documents, information or supporting evidence to assess whether the individual candidate or member of the grouping meets the accessibility criteria for the procedure indicated in the contract notice</b>
+DC2_I2_Tooltip=Only when the buyer has opened the procurement procedure to economic operators from countries outside the European Union or the European Economic Area
+
+Details=Details
 
 #
-# Admin page
-#
-MyModuleSetup = MyModule setup
-Settings = Settings
-MyModuleSetupPage = MyModule setup page
+# Generic template entries
+ModuleMyModuleName=MyModule
+ModuleMyModuleDesc=MyModule description
+MyModuleSetup=MyModule setup
+Settings=Settings
+MyModuleSetupPage=MyModule setup page
 NewSection=New section
-MYMODULE_MYPARAM1 = My param 1
-MYMODULE_MYPARAM1Tooltip = My param 1 tooltip
+MYMODULE_MYPARAM1=My param 1
+MYMODULE_MYPARAM1Tooltip=My param 1 tooltip
 MYMODULE_MYPARAM2=My param 2
 MYMODULE_MYPARAM2Tooltip=My param 2 tooltip
 
+About=About
+MyModuleAbout=About MyModule
+MyModuleAboutPage=MyModule about page
 
-#
-# About page
-#
-About = About
-MyModuleAbout = About MyModule
-MyModuleAboutPage = MyModule about page
+MyModuleArea=Home MyModule
+MyPageName=My page name
 
-#
-# Sample page
-#
-MyModuleArea = Home MyModule
-MyPageName = My page name
-
-#
-# Sample widget
-#
-MyWidget = My widget
-MyWidgetDescription = My widget description
+MyWidget=My widget
+MyWidgetDescription=My widget description
