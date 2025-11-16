@@ -6,6 +6,8 @@ Module450006Desc=Module to fill the DC2 form from the commercial proposal
 Module450006Name=DC2 form
 Delegation=Delegation
 SetupG=General
+ReadDc2Tab= Read the DC2 tab
+EditDc2Tab= Edit the contents of the DC2 tab
 dc2=DC2 form
 DC2_generate=To generate the DC2 form, go back to the "Commercial proposal" tab, then select the "DC2" document template and click "Generate".
 
