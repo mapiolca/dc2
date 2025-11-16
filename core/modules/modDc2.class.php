@@ -112,7 +112,7 @@ class modDc2 extends DolibarrModules
 
 		// To add a new tab identified by code 
 		$this->tabs = array(
-			'propal:+dc2:DC2:dc2@dc2:$user->rights->dc2->DC2->read:/dc2/tabs/DC2.php?id=__ID__',
+			'propal:+dc2:DC2:dc2@dc2:$user->hasRight("dc2", "read"):/dc2/tabs/DC2.php?id=__ID__',
 		); 
 
         // Dictionnaries
@@ -142,8 +142,16 @@ class modDc2 extends DolibarrModules
 		
 		$this->rights[$r][0] = $this->numero . sprintf('%02d', ($o * 10) + 1);
 		$this->rights[$r][1] = 'ReadDc2Tab';
-		$this->rights[$r][4] = 'DC2';
-		$this->rights[$r][5] = 'read';
+		$this->rights[$r][3] = 0;
+		$this->rights[$r][4] = 'read';
+		$this->rights[$r][5] = '';
+		$r++;
+		
+		$this->rights[$r][0] = $this->numero . sprintf('%02d', ($o * 10) + 2);
+		$this->rights[$r][1] = 'EditDc2Tab';
+		$this->rights[$r][3] = 0;
+		$this->rights[$r][4] = 'write';
+		$this->rights[$r][5] = '';
 		$r++;
 		
 
@@ -205,3 +213,4 @@ class modDc2 extends DolibarrModules
 }
 
 ?>
+
