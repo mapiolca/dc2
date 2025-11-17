@@ -5,7 +5,7 @@
  * Copyright (C) 2010-2014 Juanjo Menent         <jmenent@2byte.es>
  * Copyright (C) 2015       Marcos García        <marcosgdf@gmail.com>
  * Copyright (C) 2017      Ferran Marcet         <fmarcet@2byte.es>
- * Copyright (C) 2018      Pierre Ardoin         <pierre.ardoin@gmail.com>
+ * Copyright (C) 2018-2025 Pierre Ardoin         <developpeur@lesmetiersdubatiment.fr>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -340,8 +340,8 @@ class pdf_DC22023 extends ModelePDFPropales
 
 				$pdf->writeHTMLCell(150,4, 20, 255, dol_htmlentitiesbr($outputlangs->convToOutputCharset($dc1_line->objet_consultation)),0,1);	
 
-				$pdf->SetFont('','B',8); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
-				$pdf->writeHTMLCell(100,4, 80, 278, $outputlangs->convToOutputCharset($dc1_line->ref_consultation),0,1);
+				$pdf->SetFont('','B',9); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
+				$pdf->writeHTMLCell(100,4, 80, 275.8, $outputlangs->convToOutputCharset($dc1_line->ref_consultation),0,1);
 
 				if ($dc2_line->D2 == '1') { // Définition du nombre de pages
 					$nb_pages = "4";
@@ -350,8 +350,8 @@ class pdf_DC22023 extends ModelePDFPropales
 					$nb_pages = "9";
 				}
 				$pdf->SetFont('','B',8.5); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
-				$pdf->writeHTMLCell(150,4, 179, 276, dol_htmlentitiesbr('/'),0,1);
-				$pdf->writeHTMLCell(150,4, 183, 276, dol_htmlentitiesbr($nb_pages),0,1);
+				$pdf->writeHTMLCell(150,4, 179, 275.8, dol_htmlentitiesbr('/'),0,1);
+				$pdf->writeHTMLCell(150,4, 183, 275.8, dol_htmlentitiesbr($nb_pages),0,1);
 
 
 			// Page 2
@@ -417,9 +417,11 @@ class pdf_DC22023 extends ModelePDFPropales
 					$pdf->writeHTMLCell(190,4, 45, 170, $langs->trans("non_renseigne"),0,1);
 
 				}
+				$pdf->SetFont('','B',9); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
+				$pdf->writeHTMLCell(100,4, 80, 276.7, $outputlangs->convToOutputCharset($dc1_line->ref_consultation),0,1);
 				$pdf->SetFont('','B',8.5); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
-				$pdf->writeHTMLCell(150,4, 179, 276.6, dol_htmlentitiesbr('/'),0,1);
-				$pdf->writeHTMLCell(150,4, 183, 276.6, dol_htmlentitiesbr($nb_pages),0,1);
+				$pdf->writeHTMLCell(150,4, 179, 276.7, dol_htmlentitiesbr('/'),0,1);
+				$pdf->writeHTMLCell(150,4, 183, 276.7, dol_htmlentitiesbr($nb_pages),0,1);
 
 			// Page 3
 				$pdf->AddPage();
@@ -575,9 +577,11 @@ class pdf_DC22023 extends ModelePDFPropales
 
 					}
 				}
+				$pdf->SetFont('','B',9); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
+				$pdf->writeHTMLCell(100,4, 80, 276.7, $outputlangs->convToOutputCharset($dc1_line->ref_consultation),0,1);
 				$pdf->SetFont('','B',8.5); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
-				$pdf->writeHTMLCell(150,4, 179, 276.6, dol_htmlentitiesbr('/'),0,1);
-				$pdf->writeHTMLCell(150,4, 183, 276.6, dol_htmlentitiesbr($nb_pages),0,1);
+				$pdf->writeHTMLCell(150,4, 179, 276.7, dol_htmlentitiesbr('/'),0,1);
+				$pdf->writeHTMLCell(150,4, 183, 276.7, dol_htmlentitiesbr($nb_pages),0,1);
 
 			// Page 4
 				$pdf->AddPage();
@@ -627,10 +631,11 @@ class pdf_DC22023 extends ModelePDFPropales
 
 					$pdf->writeHTMLCell(190,4, 29.9, 137.3, dol_htmlentitiesbr("X"),0,1);
 				}
-
+                $pdf->SetFont('','B',9); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
+				$pdf->writeHTMLCell(100,4, 80, 276.7, $outputlangs->convToOutputCharset($dc1_line->ref_consultation),0,1);
 				$pdf->SetFont('','B',8.5); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
-				$pdf->writeHTMLCell(150,4, 179, 276.6, dol_htmlentitiesbr('/'),0,1);
-				$pdf->writeHTMLCell(150,4, 183, 276.6, dol_htmlentitiesbr($nb_pages),0,1);
+				$pdf->writeHTMLCell(150,4, 179, 276.7, dol_htmlentitiesbr('/'),0,1);
+				$pdf->writeHTMLCell(150,4, 183, 276.7, dol_htmlentitiesbr($nb_pages),0,1);
 
 				if ($dc2_line->D2 == '2') {
 										
@@ -671,9 +676,11 @@ class pdf_DC22023 extends ModelePDFPropales
 					$pdf->writeHTMLCell(150,4, 45, 153, $langs->trans("non_renseigne"),0,1);
 
 				}
+				$pdf->SetFont('','B',9); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
+				$pdf->writeHTMLCell(100,4, 80, 276.7, $outputlangs->convToOutputCharset($dc1_line->ref_consultation),0,1);
 				$pdf->SetFont('','B',8.5); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
-				$pdf->writeHTMLCell(150,4, 179, 276.6, dol_htmlentitiesbr('/'),0,1);
-				$pdf->writeHTMLCell(150,4, 183, 276.6, dol_htmlentitiesbr($nb_pages),0,1);
+				$pdf->writeHTMLCell(150,4, 179, 276.7, dol_htmlentitiesbr('/'),0,1);
+				$pdf->writeHTMLCell(150,4, 183, 276.7, dol_htmlentitiesbr($nb_pages),0,1);
 
 				// Page 6
 				$pdf->AddPage();
@@ -847,9 +854,11 @@ class pdf_DC22023 extends ModelePDFPropales
 					$pdf->writeHTMLCell(150,4, 30, 252, $langs->trans("non_renseigne"),0,1);
 
 				}
+				$pdf->SetFont('','B',9); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
+				$pdf->writeHTMLCell(100,4, 80, 276.7, $outputlangs->convToOutputCharset($dc1_line->ref_consultation),0,1);
 				$pdf->SetFont('','B',8.5); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
-				$pdf->writeHTMLCell(150,4, 179, 276.6, dol_htmlentitiesbr('/'),0,1);
-				$pdf->writeHTMLCell(150,4, 183, 276.6, dol_htmlentitiesbr($nb_pages),0,1);
+				$pdf->writeHTMLCell(150,4, 179, 276.7, dol_htmlentitiesbr('/'),0,1);
+				$pdf->writeHTMLCell(150,4, 183, 276.7, dol_htmlentitiesbr($nb_pages),0,1);
 
 				// Page 7
 				$pdf->AddPage();
@@ -894,9 +903,11 @@ class pdf_DC22023 extends ModelePDFPropales
 					$pdf->writeHTMLCell(150,4, 30, 123, $langs->trans("non_renseigne"),0,1);
 
 				}
+				$pdf->SetFont('','B',9); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
+				$pdf->writeHTMLCell(100,4, 80, 276.7, $outputlangs->convToOutputCharset($dc1_line->ref_consultation),0,1);
 				$pdf->SetFont('','B',8.5); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
-				$pdf->writeHTMLCell(150,4, 179, 276.6, dol_htmlentitiesbr('/'),0,1);
-				$pdf->writeHTMLCell(150,4, 183, 276.6, dol_htmlentitiesbr($nb_pages),0,1);
+				$pdf->writeHTMLCell(150,4, 179, 276.7, dol_htmlentitiesbr('/'),0,1);
+				$pdf->writeHTMLCell(150,4, 183, 276.7, dol_htmlentitiesbr($nb_pages),0,1);
 
 				// Page 8
 				$pdf->AddPage();
@@ -914,8 +925,8 @@ class pdf_DC22023 extends ModelePDFPropales
 				//Contenu
 
 				$pdf->SetFont('','B',8.5); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
-				$pdf->writeHTMLCell(150,4, 179, 276.6, dol_htmlentitiesbr('/'),0,1);
-				$pdf->writeHTMLCell(150,4, 183, 276.6, dol_htmlentitiesbr($nb_pages),0,1);
+				$pdf->writeHTMLCell(150,4, 179, 276.7, dol_htmlentitiesbr('/'),0,1);
+				$pdf->writeHTMLCell(150,4, 183, 276.7, dol_htmlentitiesbr($nb_pages),0,1);
 
 				// Page 9
 				$pdf->AddPage();
@@ -951,9 +962,11 @@ class pdf_DC22023 extends ModelePDFPropales
 					$pdf->writeHTMLCell(150,4, 30, 100, dol_htmlentitiesbr($dc2_line->I2),0,1);
 
 				}
+				$pdf->SetFont('','B',9); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
+				$pdf->writeHTMLCell(100,4, 80, 276.7, $outputlangs->convToOutputCharset($dc1_line->ref_consultation),0,1);
 				$pdf->SetFont('','B',8.5); // fixe la police, le type ( 'B' pour gras, 'I' pour italique, '' pour normal,...)
-				$pdf->writeHTMLCell(150,4, 179, 276.6, dol_htmlentitiesbr('/'),0,1);
-				$pdf->writeHTMLCell(150,4, 183, 276.6, dol_htmlentitiesbr($nb_pages),0,1);
+				$pdf->writeHTMLCell(150,4, 179, 276.7, dol_htmlentitiesbr('/'),0,1);
+				$pdf->writeHTMLCell(150,4, 183, 276.7, dol_htmlentitiesbr($nb_pages),0,1);
 
 			
 
@@ -1214,4 +1227,3 @@ class pdf_DC22023 extends ModelePDFPropales
 	}
 
 }
-
