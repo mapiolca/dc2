@@ -1,27 +1,25 @@
 <?php
-/* Copyright (C) 2018-2020      Pierre Ardoin        <mapiolca@me.com>
- *                                             
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program. If not, see <http://www.gnu.org/licenses/>.
- */
+/* Copyright (C) 2018-2025	Pierre Ardoin	<developpeur@lesmetiersdubatiment.fr>
+	*
+	* This program is free software; you can redistribute it and/or modify
+	* it under the terms of the GNU General Public License as published by
+	* the Free Software Foundation; either version 2 of the License, or
+	* (at your option) any later version.
+	*
+	* This program is distributed in the hope that it will be useful,
+	* but WITHOUT ANY WARRANTY; without even the implied warranty of
+	* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	* GNU General Public License for more details.
+	*
+	* You should have received a copy of the GNU General Public License
+	* along with this program. If not, see <http://www.gnu.org/licenses/>.
+	*/
 
-/**	    \file       htdocs/delegation/tabs/DC2.php
- *		\ingroup    delegation
- *		\brief      DC2 module tabs view
- */
-
-
+/**		 \file       htdocs/delegation/tabs/DC2.php
+	*			\ingroup    delegation
+	*			\brief      DC2 module tabs view
+	*			\brief      Affichage de l'onglet DC2 pour les propositions commerciales
+	*/
 
 $res=@include("../../main.inc.php");					// For root directory
 if (! $res) $res=@include("../../../main.inc.php");	// For "custom" directory
@@ -97,14 +95,14 @@ if ($id > 0)
 				{
 					$dc1_line->id_acheteur;
 					$dc1_line->objet_consultation;
-		            $dc1_line->objet_candidature;
-		            $dc1_line->n_lots;
-		            $dc1_line->designation_lot;
-		            $dc1_line->candidat_statut;
-		            $dc1_line->F_engagement;
-		            $dc1_line->adresse_internet;
-		            $dc1_line->renseignement_adresse;
-		            $dc1_line->dc2;
+					$dc1_line->objet_candidature;
+					$dc1_line->n_lots;
+					$dc1_line->designation_lot;
+					$dc1_line->candidat_statut;
+					$dc1_line->F_engagement;
+					$dc1_line->adresse_internet;
+					$dc1_line->renseignement_adresse;
+					$dc1_line->dc2;
 				}
 				
 				if ($object->element != 'propal')// || $object->type != 5)
@@ -150,23 +148,23 @@ else
 
 if (!$error && !$cancel)
 {
-    $result = $dc1->call($action, array($user));
-    $result = $dc2->call($action, array($user));
+	$result = $dc1->call($action, array($user));
+	$result = $dc2->call($action, array($user));
 
-    if ($result > 0)
-    {
-        $message = $dc2->error; //
-    }
-    else
-    {
-        $message = $dc2->error;
-        $error = true;
-    }
+	if ($result > 0)
+	{
+		$message = $dc2->error; //
+	}
+	else
+	{
+		$message = $dc2->error;
+		$error = true;
+	}
 }
 
 $head = propal_prepare_head($object);
 $current_head = 'dc2';
- 
+	
 $soc = new Societe($db);
 $soc->fetch($object->socid);
 
@@ -181,7 +179,7 @@ if (! empty($conf->projet->enabled))
 }
 
 $numLines = sizeof($dc2->lines);
-	    	
+			
 include '../tpl/dc2.default.tpl.php';
 
 $db->close();
