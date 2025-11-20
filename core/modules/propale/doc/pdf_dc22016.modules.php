@@ -34,8 +34,8 @@ require_once DOL_DOCUMENT_ROOT.'/core/lib/company.lib.php';
 require_once DOL_DOCUMENT_ROOT.'/core/lib/functions2.lib.php';
 require_once DOL_DOCUMENT_ROOT.'/core/lib/pdf.lib.php';
 
-require_once DOL_DOCUMENT_ROOT.'/custom/dc1/class/dc1.class.php';
-require_once DOL_DOCUMENT_ROOT.'/custom/dc2/class/dc2.class.php';
+dol_include_once('/dc1/class/dc1.class.php');
+dol_include_once('/dc2/class/dc2.class.php');
 
 
 
@@ -309,14 +309,14 @@ class pdf_DC22016 extends ModelePDFPropales
 			// Page 1
 				$pdf->AddPage();
 				
-                $pagecount = $pdf->setSourceFile(DOL_DOCUMENT_ROOT.'/custom/dc2/core/modules/propale/doc/DC2_2016/DC2-2016.pdf');
+                $pagecount = $pdf->setSourceFile(dol_include_once('/dc2/core/modules/propale/doc/DC2_2016/DC2-2016.pdf'));
                 $tplidx = $pdf->importPage(1);
                 
 				
 				if (! empty($tplidx)) $pdf->useTemplate($tplidx);
 
-				include DOL_DOCUMENT_ROOT.'/custom/dc1/core/modules/propale/doc/DC1-2016/DC1-2016.php';
-				include DOL_DOCUMENT_ROOT.'/custom/dc2/core/modules/propale/doc/DC2-2016/DC2-2016.php';
+				dol_include_once('/dc1/core/modules/propale/doc/DC1-2016/DC1-2016.php');
+				dol_include_once('/dc2/core/modules/propale/doc/DC2-2016/DC2-2016.php');
 
 				$logo=$conf->mycompany->dir_output.'/logos/'.$this->emetteur->logo;
 
