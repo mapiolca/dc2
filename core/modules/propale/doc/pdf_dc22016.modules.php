@@ -309,7 +309,7 @@ class pdf_DC22016 extends ModelePDFPropales
 			// Page 1
 				$pdf->AddPage();
 				
-                $pagecount = $pdf->setSourceFile(dol_include_once('/dc2/core/modules/propale/doc/DC2_2016/DC2-2016.pdf'));
+                $pagecount = $pdf->setSourceFile(DOL_DOCUMENT_ROOT.'/custom/dc2/core/modules/propale/doc/DC2_2016/DC2-2016.pdf');
                 $tplidx = $pdf->importPage(1);
                 
 				
