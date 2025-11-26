@@ -1,4 +1,4 @@
-# DC2 ChangeLog
+# CHANGELOG MODULE DC2 FOR [DOLIBARR ERP CRM](https://www.dolibarr.org)
 
 ## 1.0.1 (26/11/2025)
 
