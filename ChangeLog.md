@@ -1,8 +1,9 @@
 # CHANGELOG MODULE DC2 FOR [DOLIBARR ERP CRM](https://www.dolibarr.org)
 
-## 1.0.2 (25/08/2026)
+## 1.0.2 (26/08/2026)
 
 - Supprime les propriétés dynamiques obsolètes du descripteur sous PHP 8.2 et corrige la syntaxe de l'URL de contrôle de version.
+- Charge les classes et ressources PHP propres au module depuis les répertoires custom avec `dol_include_once()`.
 
 ## 1.0.1 (26/11/2025)
 
