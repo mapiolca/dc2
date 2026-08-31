@@ -6,7 +6,7 @@
 - Normalise le calcul des permissions sans modifier les identifiants `45000611` et `45000612` déjà déployés.
 - Charge les classes DC1/DC2 avec `dol_include_once()`, résout les fonds PDF avec `dol_buildpath()` et retire les inclusions obsolètes de fragments exécutables.
 - Aligne le socle minimal déclaré et documenté sur Dolibarr 20 et PHP 8.0.
-- Intègre la documentation bilingue et les illustrations de la branche principale.
+- Intègre la documentation bilingue et les illustrations de la branche principale, puis complète et fiabilise les catalogues français et anglais.
 
 ## 1.0.1 (26/11/2025)
 
