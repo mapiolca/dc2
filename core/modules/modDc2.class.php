@@ -1,5 +1,5 @@
 <?php
-/* Copyright (C) 2018-2025	Pierre Ardoin		<developpeur@lesmetiersdubatiment.fr>
+/* Copyright (C) 2018-2026	Pierre Ardoin		<developpeur@lesmetiersdubatiment.fr>
 
  *
  * This program is free software; you can redistribute it and/or modify
@@ -95,8 +95,6 @@ class modDc2 extends DolibarrModules
 		// Data directories to create when module is enabled.
 		// Example: this->dirs = array("/mymodule/temp");
 		$this->dirs = array("/dc2/temp");
-		$r=0;
-
 		// Config pages. Put here list of php page names stored in admmin directory used to setup module.
 		$this->config_page_url = array('propal.php?save_lastsearch_values=1&backtopage=%2Fadmin%2Fmodules.php');
 
@@ -104,7 +102,7 @@ class modDc2 extends DolibarrModules
 		$this->depends = array('modProjet', 'modSociete', 'modDc1');		// List of modules id that must be enabled if this module is enabled
 		$this->conflictwith = array();
 		$this->phpmin = array(8,0);					// Minimum version of PHP required by module
-		$this->need_dolibarr_version = array(19,0);	// Minimum version of Dolibarr required by module
+		$this->need_dolibarr_version = array(20,0);	// Minimum version of Dolibarr required by module
 		$this->langfiles = array("dc2@dc2");
 
 		// Constants
@@ -136,29 +134,24 @@ class modDc2 extends DolibarrModules
 		// Permissions provided by this module
 		$this->rights = array();
 		$r = 0;
+		$r += 10; // Permission offsets 1 to 10 remain reserved to preserve deployed IDs.
 		// Add here entries to declare new permissions
 		/* BEGIN MODULEBUILDER PERMISSIONS */
-		$o = 1;
-		
-		$this->rights[$r][0] = $this->numero . sprintf('%02d', ($o * 10) + 1);
+		$r++;
+		$this->rights[$r][0] = $this->numero * 100 + $r;
 		$this->rights[$r][1] = 'ReadDc2Tab';
 		$this->rights[$r][3] = 0;
 		$this->rights[$r][4] = 'read';
 		$this->rights[$r][5] = '';
 		$r++;
-		
-		$this->rights[$r][0] = $this->numero . sprintf('%02d', ($o * 10) + 2);
+		$this->rights[$r][0] = $this->numero * 100 + $r;
 		$this->rights[$r][1] = 'EditDc2Tab';
 		$this->rights[$r][3] = 0;
 		$this->rights[$r][4] = 'write';
 		$this->rights[$r][5] = '';
-		$r++;
-		
 
 		// Main menu entries
 		$this->menu = array();			// List of menus to add
-
-        $r = 0;
 			
 	}
 
@@ -213,6 +206,7 @@ class modDc2 extends DolibarrModules
 }
 
 ?>
+
 
 
 
