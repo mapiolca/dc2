@@ -202,7 +202,7 @@ class pdf_DC22023 extends ModelePDFPropales
 
 				$dc1_lines = array();
 				$dc2_lines = array();
-				if ($conf->dc1->enabled && $conf->dc2->enabled)
+				if (isModEnabled('dc1') && isModEnabled('dc2'))
 				{
 					dol_include_once("/dc1/class/dc1.class.php");
 					dol_include_once("/dc2/class/dc2.class.php");
@@ -308,15 +308,19 @@ class pdf_DC22023 extends ModelePDFPropales
 
 			// Page 1
 				$pdf->AddPage();
-				
-                $pagecount = $pdf->setSourceFile(DOL_DOCUMENT_ROOT.'/custom/dc2/core/modules/propale/doc/DC2_2023/DC2-2023.pdf');
-                $tplidx = $pdf->importPage(1);
-                
-				
-				if (! empty($tplidx)) $pdf->useTemplate($tplidx);
 
-				dol_include_once('/dc1/core/modules/propale/doc/DC1-2019/DC1-2019.php');
-				dol_include_once('/dc2/core/modules/propale/doc/DC2-2023/DC2-2023.php');
+				$templatepath = dol_buildpath('/dc2/core/modules/propale/doc/DC2_2023/DC2-2023.pdf', 0, 1);
+				if (empty($templatepath) || !is_readable($templatepath)) {
+					$this->error = $langs->trans('ErrorFileNotFound', 'DC2_2023/DC2-2023.pdf');
+					return 0;
+				}
+
+				$pdf->setSourceFile($templatepath);
+				$tplidx = $pdf->importPage(1);
+
+				if (!empty($tplidx)) {
+					$pdf->useTemplate($tplidx);
+				}
 
 				$logo=$conf->mycompany->dir_output.'/logos/'.$this->emetteur->logo;
 
@@ -1077,7 +1081,7 @@ class pdf_DC22023 extends ModelePDFPropales
 		$pdf->SetFont('', 'B', $default_font_size + 3);
 		$pdf->SetXY($posx,$posy);
 		$pdf->SetTextColor(0,0,60);
-		$title=$outputlangs->transnoentities("Deleg")." ".$outputlangs->convToOutputCharset($object->ref);
+		$title=$outputlangs->transnoentities("Delegation")." ".$outputlangs->convToOutputCharset($object->ref);
 		$pdf->MultiCell(100, 3, $title, '', 'R');
 		$posy+=1;
 
