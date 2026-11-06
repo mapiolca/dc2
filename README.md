@@ -83,3 +83,9 @@ The module is compatible with Multicompany: data tables use the Dolibarr prefix 
 - License: GPL v3 or later
 
 For any issue or suggestion, please open a ticket and include the Dolibarr log along with the reproduction steps.
+
+## Mise à jour 1.0.3 / Update 1.0.3
+
+DC2 est placé juste après DC1 par le hook natif `completeTabsHead` dans le contexte `globalcard`, y compris sur la fiche DC2. Seuls les onglets déjà autorisés sont déplacés ; les autres onglets conservent leur ordre relatif. Actualiser les hooks persistés par la procédure native de mise à jour du module dans chaque entité, en conservant les réglages et droits. Aucun changement de données métier.
+
+DC2 is placed immediately after DC1 through the native `completeTabsHead` hook in the `globalcard` context, including the DC2 page. Only existing authorized tabs are moved. Refresh persisted hooks through the native module update procedure in each entity, preserving settings and permissions.
