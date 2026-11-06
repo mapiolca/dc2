@@ -90,7 +90,7 @@ class modDc2 extends DolibarrModules
 		//                        );
 		$this->module_parts = array(
 			'models' => 1,
-			'hooks' => array('globalcard')
+			'hooks' => array('globalcard', 'propalnote')
 		);
 
 		// Data directories to create when module is enabled.
